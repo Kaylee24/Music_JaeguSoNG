@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0c0b72596e153d9165c25432e72e402eb493f10947adba3cccb85faa204e000
-size 373
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+// import App from './App.tsx'
+
+import router from "./routes/router";
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    {/* <App /> */}
+    <RouterProvider router={router} />
+  </StrictMode>
+);

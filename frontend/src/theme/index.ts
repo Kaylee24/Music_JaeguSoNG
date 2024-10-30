@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6858d66ff120d09dd0403e4ada93dce0c392a97c4a9fcb1f122c9c80057e7fb
-size 490
+import { createSystem, defaultConfig } from "@chakra-ui/react";
+
+export const system = createSystem(defaultConfig, {
+  theme: {
+    tokens: {
+      colors: {
+        brand: {
+          50: { value: "#e3f2f9" },
+          100: { value: "#c5e4f3" },
+          500: { value: "#02001F" }, // 주요 색상 설정
+          900: { value: "#0d47a1" },
+        },
+        background: { value: "#02001F" },
+      },
+    },
+  },
+});
