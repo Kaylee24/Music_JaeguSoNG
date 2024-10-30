@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ad518511d36d84dc527ff276d9b6d6dcd638562b4454aab4fafffdaba9f0f53
-size 332
+"use client"
+
+import { ChakraProvider, defaultSystem } from "@chakra-ui/react"
+import { ColorModeProvider } from "./color-mode"
+
+export function Provider(props: React.PropsWithChildren) {
+  return (
+    <ChakraProvider value={defaultSystem}>
+      <ColorModeProvider>{props.children}</ColorModeProvider>
+    </ChakraProvider>
+  )
+}

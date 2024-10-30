@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd535b368b6488800ef14ab1211e531003fc4b8da702f390c487778dd72703dd
-size 279
+import { Box, Text } from '@chakra-ui/react';
+import Container from '@/components/auth/signup/container';
+
+export default function SignUpView() {
+  return (
+    <Box color="white">
+      <Text fontFamily="MiceGothicBold">회원가입</Text>
+      <Container />
+    </Box>
+  ) 
+}
