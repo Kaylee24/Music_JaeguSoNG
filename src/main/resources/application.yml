@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb88406c096e3851f0b4243a2737fa8205dd2e1c5743fbace73024ce499bdd5f
-size 614
+spring:
+  application:
+    name: reco
+
+  profiles:
+    include: auth
+    active: prod
+
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
