@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2afdb62f15aa842753784f901b16e331fd5b8f867fe6141ed4234e9ecfc24a4
-size 360
+import { Card, Heading, Stack } from "@chakra-ui/react";
+
+export default function DividerAnnouncementView() {
+  return (
+    <Stack>
+      <Card.Root size="sm">
+        <Card.Header>
+          <Heading size="md"> Card - sm</Heading>
+        </Card.Header>
+        <Card.Body color="fg.muted">AnnouncementView</Card.Body>
+      </Card.Root>
+    </Stack>
+  );
+}
