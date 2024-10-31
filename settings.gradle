@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14d571177cf71ba1268dc4cda17aace7bbfe9dac44e283464e03cac33b4691a7
-size 27
+rootProject.name = 'reco'

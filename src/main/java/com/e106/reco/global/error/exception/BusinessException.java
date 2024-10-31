@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b3582925bc3bfcd8a8ff1d4336e6b4bbfe28510c16932f7d155d86d3ccae1da
-size 520
+package com.e106.reco.global.error.exception;
+
+import com.e106.reco.global.error.errorcode.ErrorCode;
+import lombok.Getter;
+
+@Getter
+public class BusinessException extends RuntimeException {
+
+    private final ErrorCode errorCode;
+
+    public BusinessException(ErrorCode errorCode, String message) {
+        super(message);
+        this.errorCode = errorCode;
+    }
+    public BusinessException(ErrorCode errorCode) {
+        super(errorCode.getMessage());
+        this.errorCode = errorCode;
+    }
+}

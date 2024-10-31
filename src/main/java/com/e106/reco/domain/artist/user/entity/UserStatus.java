@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7387df3f01bbeb75394100aabddf26232b9bbd2d3af2c9971cdb9c0f77c4a7b2
-size 287
+package com.e106.reco.domain.artist.user.entity;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@Getter
+@RequiredArgsConstructor
+public enum UserStatus {
+    ACTIVE("활성"),
+    SLEEP("휴면"),
+    INACTIVE("비활성");
+
+    private final String state;
+
+}

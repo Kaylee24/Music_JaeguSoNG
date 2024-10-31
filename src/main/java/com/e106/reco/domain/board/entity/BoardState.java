@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6606d08e30214fec20be111d688bc37366f72e705eef4e1ac9913c64ee990fd2
-size 266
+package com.e106.reco.domain.board.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public enum BoardState {
+    PRIVATE, PUBLIC;
+
+    private int info;
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:148db09f69507f7e626643340c6299d3cbf9157f4a126f4d6c06ba27a8f0094c
-size 407
+package com.e106.reco.domain.artist.user.repository;
+
+import com.e106.reco.domain.artist.user.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+    boolean existsByEmail(String email);
+    Optional<User> findByEmail(String email);
+
+    Optional<User> findBySeq(Long seq);
+}
