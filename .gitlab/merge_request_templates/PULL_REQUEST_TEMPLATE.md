@@ -1,13 +1,3 @@
-## 🙆‍♂️ Issue
-"#이슈번호를" 추가해주세요
-
-## 📝 Description
-어떤 내용인지 설명해주세요. 
-
-## ✨ Feature
-어떤 기능인지 나열해주세요.
-1. ...
-
-## 👌 Review
-This closes "#이슈번호를" 추가해주세요
-리뷰어가 특별히 봐주었으면 하는 부분이 있다면 작성해주세요
+version https://git-lfs.github.com/spec/v1
+oid sha256:99900f8a5d8870903516bf38bc15c1b1f0b0f698f6c122df437aacff8d02c3d6
+size 337
