@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5f29eb91b6f5cae6a3f3fdbae795fc214b204b4049ac644bf500dbd1c9dcac3
-size 203
+package com.e106.reco.domain.artist.crew.dto;
+
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+
+@Getter
+public class CrewJoinDto {
+    @NotNull
+    private Long crewSeq;
+}
