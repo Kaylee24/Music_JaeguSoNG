@@ -1,17 +1,3 @@
-import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Box } from '@chakra-ui/react';
-import UpdateContainer from '@/components/community/update-container';
-
-
-const CommunityUpdateView: React.FC = () => {
-  const { id } = useParams<{id: string}>();
-
-  return (
-    <Box>
-      <UpdateContainer />
-    </Box>
-  );
-};
-
-export default CommunityUpdateView;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4039984995385cd4014cbf77f882456e37a18ebd25ae07e70245e5f6491729ad
+size 583
