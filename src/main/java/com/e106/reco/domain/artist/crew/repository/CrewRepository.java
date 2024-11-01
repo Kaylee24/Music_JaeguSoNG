@@ -1,10 +1,3 @@
-package com.e106.reco.domain.artist.crew.repository;
-
-import com.e106.reco.domain.artist.crew.entity.Crew;
-import com.e106.reco.domain.artist.user.entity.User;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.Optional;
-
-public interface CrewRepository extends JpaRepository<Crew, Long> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4905c00162d7d358d05e6d9d38e5905ebe24085eeb1bb2c0314aafdf55b94e84
+size 508
