@@ -1,5 +1,3 @@
-package com.e106.reco.domain.artist.entity;
-
-public enum Genre {
-    락, 발라드, 인디, 댄스, 클래식, 재즈, 오케스트라, 랩, 기타등등
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fadfcdafd49dba59eb264765e335ba8bb4e8aecbe10ad502fd7bebbd275ef14
+size 853

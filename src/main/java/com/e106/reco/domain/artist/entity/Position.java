@@ -1,5 +1,3 @@
-package com.e106.reco.domain.artist.entity;
-
-public enum Position {
-    보컬, 베이스, 드럼, 일렉트릭기타, 어쿠스틱기타, 건반, 현악기, 관악기, 키보드, 크루;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2282e847975b3dd53816ba26dc83f19e7531b57f3ab5fbc8427ad77e1ce5857
+size 922
