@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffd4ffed78051152724c4f848cfae37a73842334612311229aa6febf4895a9bc
-size 440
+const sounds: { [key: string]: HTMLAudioElement } = {
+  kick: new Audio("/sounds/kick.wav"),
+  snare: new Audio("/sounds/snare.wav"),
+  clap: new Audio("/sounds/clap.wav"),
+  hihat: new Audio("/sounds/hihat.wav"),
+  openhat: new Audio("/sounds/openhat.wav"),
+  ride: new Audio("/sounds/ride.wav"),
+  boom: new Audio("/sounds/boom.wav"),
+  tink: new Audio("/sounds/tink.wav"),
+  tom: new Audio("/sounds/tom.wav"),
+};
+
+export default sounds;
