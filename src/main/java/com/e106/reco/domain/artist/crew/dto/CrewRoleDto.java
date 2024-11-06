@@ -1,12 +1,3 @@
-package com.e106.reco.domain.artist.crew.dto;
-
-import com.e106.reco.domain.artist.crew.entity.CrewUserState;
-import lombok.Builder;
-import lombok.Getter;
-
-@Builder
-@Getter
-public class CrewRoleDto {
-    Long userSeq;
-    CrewUserState state;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b5e01ee9b35721e7334d6fef5e9d1669b5b325b7e8a669937f73cf8be86ee43c
+size 322
