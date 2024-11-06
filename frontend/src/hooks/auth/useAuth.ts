@@ -1,21 +1,3 @@
-import { useNavigate } from "react-router-dom";
-import paths from "@/configs/paths";
-
-const useAuth = () => {
-    const navigate = useNavigate();
-
-    const goSignupPage = () => {
-        navigate(paths.auth.signUp)
-    }
-
-    const goSignInPage = () => {
-        navigate(paths.auth.signIn)
-    }
-
-    return {
-        goSignupPage,
-        goSignInPage
-    }
-}
-
-export default useAuth;
+version https://git-lfs.github.com/spec/v1
+oid sha256:75811acce1b59d7f0fe40037cd82327b7dbb25eb49aafa450077e9c45e96f2e4
+size 922
