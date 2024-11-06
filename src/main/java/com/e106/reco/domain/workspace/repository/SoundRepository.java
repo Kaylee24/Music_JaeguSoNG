@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4b9b87237022f6cc20dc6c8a579dc6820d77ff126749a9cbcd239e2da2055a6
-size 332
+package com.e106.reco.domain.workspace.repository;
+
+import com.e106.reco.domain.workspace.entity.Sound;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface SoundRepository extends JpaRepository<Sound, Long> {
+    List<Sound> findAllByWorkspace_Seq(Long workspaceSeq);
+}
