@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8928a4cca7627db57cdba7fbee565df55495aff52f9034a00b0d4717f4090bd5
-size 444
+package com.e106.reco.domain.artist.crew.dto;
+
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Setter
+@Getter
+public class CrewDto {
+    @NotNull
+    private Long crewSeq;
+
+    private LocalDate birth;
+    private String nickname;
+    private String region;
+    private String genre;
+    private String content;
+
+    private String profileImage;
+}
