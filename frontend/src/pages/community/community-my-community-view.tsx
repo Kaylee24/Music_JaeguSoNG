@@ -1,15 +1,3 @@
-import React from 'react';
-import { Box } from '@chakra-ui/react';
-import Header from '@/components/community/header';
-import Container from '@/components/community/container';
-
-const CommunityMyCommunityView: React.FC = () => {
-  return (
-    <Box>
-      <Header />
-      <Container></Container>
-    </Box>
-  );
-};
-
-export default CommunityMyCommunityView;
+version https://git-lfs.github.com/spec/v1
+oid sha256:8341135eb891033d6147421bd34399e821b04f3058c4dbcae82a34b1bf5340b9
+size 451
