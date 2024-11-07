@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49367ddca514f67dd0eccf02dba0ee6560f9a2a13af392b5b52dc56de6f06d8c
-size 888
+package com.e106.reco.domain.board.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@ToString
+public class BoardRequestDto {
+    private Long artistSeq;
+    private String title;
+    private String state;
+    private String content;
+}

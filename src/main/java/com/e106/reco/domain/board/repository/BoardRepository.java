@@ -1,7 +1,3 @@
-package com.e106.reco.domain.board.repository;
-
-import com.e106.reco.domain.board.entity.Board;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface BoardRepository extends JpaRepository<Board, Long> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97179310f669205f5bdf732ddb6a50d9609117a93aa0e276576c8678990da2e4
+size 564
