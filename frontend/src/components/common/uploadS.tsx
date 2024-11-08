@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:710cb1d77162265989faba1fc81e7e5f3c214dea5c1f4b28ea9514197bc08afe
-size 478
+import { Button } from "@/components/ui/button";
+import {
+  FileUploadList,
+  FileUploadRoot,
+  FileUploadTrigger,
+} from "@/components/ui/file-button";
+import { HiUpload } from "react-icons/hi";
+
+export default function UploadS() {
+  return (
+    <FileUploadRoot>
+      <FileUploadTrigger asChild>
+        <Button variant="outline" size="sm">
+          <HiUpload /> Upload file
+        </Button>
+      </FileUploadTrigger>
+      <FileUploadList />
+    </FileUploadRoot>
+  );
+}
