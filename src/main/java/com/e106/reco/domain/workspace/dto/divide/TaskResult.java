@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d20f6dcb02857dfa395b6ceaadaeca589464e306e05d47cb03dc7f8292df47b0
-size 197
+package com.e106.reco.domain.workspace.dto.divide;
+
+import lombok.Data;
+
+@Data
+public class TaskResult {
+    private String state;
+    private String error;
+    private Integer progress;
+}
