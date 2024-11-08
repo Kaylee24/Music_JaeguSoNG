@@ -1,9 +1,3 @@
-package com.e106.reco.domain.chat.repository;
-
-import com.e106.reco.domain.chat.entity.Chat;
-import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
-
-public interface ChatRepository extends ReactiveMongoRepository<Chat, String> {
-//    @Query("{sender:?0, receiver:?1}")
-//    Flux<Chat> mFindBySender(String sender, String receiver);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ce963edcca5ecea4b86d42e542d30776804178ebbe2d0ea8cc4b59448a60f61
+size 535
