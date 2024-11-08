@@ -1,19 +1,3 @@
-import Session from "@/components/workspace/session";
-import { Stack } from "@chakra-ui/react";
-import { v4 as uuidv4 } from "uuid";
-
-export default function SessionBox() {
-  const sessions = [
-    { id: uuidv4(), title: "Session 1" },
-    { id: uuidv4(), title: "Session 2" },
-    { id: uuidv4(), title: "Session 3" },
-  ];
-
-  return (
-    <Stack>
-      {sessions.map((session) => (
-        <Session key={session.id} sessionId={session.id} />
-      ))}
-    </Stack>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3507c4cee1736d062e9f998254f4666b124bf17bee31f7d3073e5f6ba0d6e9d8
+size 629
