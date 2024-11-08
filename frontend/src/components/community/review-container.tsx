@@ -1,16 +1,3 @@
-import React from 'react';
-import { Box, Stack, Separator, Text } from "@chakra-ui/react"
-
-const Reviewcontainer: React.FC = () => {
-  return (
-    <Box>
-    <Stack>
-      <Separator size="xs" marginTop="20px" />
-      <Text>댓글</Text>
-      <Separator size="xs" />
-    </Stack>
-    </Box>
-  );
-};
-
-export default Reviewcontainer;
+version https://git-lfs.github.com/spec/v1
+oid sha256:1eab3c94768f0c4b7bb632c193e4b1442f32687a060855a3916f1de0e9151d5e
+size 354
