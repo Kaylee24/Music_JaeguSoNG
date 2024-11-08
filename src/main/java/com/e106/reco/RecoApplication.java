@@ -1,14 +1,3 @@
-package com.e106.reco;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class RecoApplication {
-
-    public static void main(String[] args) {
-
-        SpringApplication.run(RecoApplication.class, args);
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aad89739316e87f72b11c16fa3c7b78d385d4efe652e83d1a53a36a98849e188
+size 439
