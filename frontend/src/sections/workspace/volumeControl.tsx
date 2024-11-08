@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b57247c4d31fe19072500f1947c65387d48918b0f18667417cd92c0937fc35f
-size 451
+import { Slider } from "@/components/ui/slider";
+
+interface VolumeControlProps {
+  volume: number;
+  onVolumeChange: (volume: number) => void;
+}
+
+export default function VolumeControl({
+  volume,
+  onVolumeChange,
+}: VolumeControlProps) {
+  return (
+    <Slider
+      maxW="200px"
+      value={[volume]} // 배열 형태로 제공
+      onValueChange={(e: { value: number[] }) => onVolumeChange(e.value[0])} // ValueChangeDetails 구조
+    />
+  );
+}
