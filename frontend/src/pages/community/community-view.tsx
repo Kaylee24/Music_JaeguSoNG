@@ -1,13 +1,3 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-
-const CommunityView: React.FC = () => {
-
-  return (
-    <div style={{ color: 'white', fontFamily: "MiceGothicBold" }}>
-        <Outlet />
-    </div>
-    );
-};
-
-export default CommunityView;
+version https://git-lfs.github.com/spec/v1
+oid sha256:dca3f3c212b479084f61ebf7464e26ea7b889c14c855b329d86cf5dba9e5fb7b
+size 260
