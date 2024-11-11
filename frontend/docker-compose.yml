@@ -1,14 +1,3 @@
-networks:
-  mimlnetwork:
-    external: true
-
-services:
-  mimlfront:
-    container_name: mimlfront
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    ports:
-      - 5173:5173  # Nginx의 80 포트를 외부에 노출
-    networks:
-      - mimlnetwork
+version https://git-lfs.github.com/spec/v1
+oid sha256:b035ea9cb9c4472909da5af71232d09f1e4bca95cdebf08d38d87db94d57261f
+size 261
