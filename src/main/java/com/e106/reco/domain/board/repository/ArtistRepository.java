@@ -1,10 +1,3 @@
-package com.e106.reco.domain.board.repository;
-
-import com.e106.reco.domain.artist.entity.Artist;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.Optional;
-
-public interface ArtistRepository extends JpaRepository<Artist, Long> {
-    Optional<Artist> findBySeq(Long seq);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3229b79ea47c809aa9e69986fa49b8f81f48df019fc178eeaaa4f5618fbe2e74
+size 597
