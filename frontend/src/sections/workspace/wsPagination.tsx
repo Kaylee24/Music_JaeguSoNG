@@ -1,19 +1,3 @@
-import { HStack } from "@chakra-ui/react";
-import {
-  PaginationItems,
-  PaginationNextTrigger,
-  PaginationPrevTrigger,
-  PaginationRoot,
-} from "@/components/ui/pagination";
-
-export default function WsPagination() {
-  return (
-    <PaginationRoot count={20} pageSize={2} defaultPage={1} color="white">
-      <HStack>
-        <PaginationPrevTrigger color="white" />
-        <PaginationItems color="white" />
-        <PaginationNextTrigger color="white" />
-      </HStack>
-    </PaginationRoot>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1561dd28d34f0ce338a0171c558624003374818445dc1ed2484ca31205e70178
+size 848
