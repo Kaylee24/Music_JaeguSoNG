@@ -1,19 +1,3 @@
-package com.e106.reco.domain.workspace.dto;
-
-import com.e106.reco.domain.workspace.entity.converter.WorkspaceState;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-@Getter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class WorkspaceResponse {
-    private Long workspaceSeq;
-    private String name;
-    private String thumbnail;
-    private WorkspaceState state;
-    private String originTitle;
-    private String originSinger;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a97e81e7923a1ed54901e6467eef7fe9238db0a40987aad717cd8a78d6df88f0
+size 535
