@@ -1,19 +1,3 @@
-package com.e106.reco.domain.chat.entity;
-
-import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.time.LocalDateTime;
-
-@Data
-@Document(collection = "chat")
-public class Chat {
-    @Id
-    private String seq;
-    private String msg;
-    private String sender;
-    private String receiver;
-
-    private LocalDateTime createdAt;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:494ee37f9d85f0e1eddab7cc118a11a8f6350c1be802020e4d1e192bcbdb3e69
+size 556
