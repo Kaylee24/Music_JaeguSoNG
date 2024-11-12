@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d764c116cce795321d59aad13a276f15d864c692e9c27186f5636cf68daedd5e
-size 303
+package com.e106.reco.domain.chat.repository;
+
+import com.e106.reco.domain.chat.entity.Room;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface RoomRepository extends JpaRepository<Room, Long>{
+    Optional<Room> findBySeq(Long Seq);
+}
