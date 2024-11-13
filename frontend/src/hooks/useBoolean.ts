@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b7e89de4254f0ce9826f86bf84f5eb387d85a7ff9317bc8b4ef0688f4051ada3
-size 415
+import { useState, useCallback } from "react";
+
+function useBoolean(initialValue: boolean = false) {
+  const [value, setValue] = useState(initialValue);
+
+  const toggle = useCallback(() => setValue((prev) => !prev), []);
+  const setTrue = useCallback(() => setValue(true), []);
+  const setFalse = useCallback(() => setValue(false), []);
+
+  return { value, toggle, setTrue, setFalse };
+}
+
+export default useBoolean;
