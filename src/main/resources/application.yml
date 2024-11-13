@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8dba0a2ebe2af57e674540dadfef6b04348ba44f0587686f1f21d02c6c016df6
-size 616
+spring:
+  application:
+    name: reco
+
+  profiles:
+    include: auth
+    active: dev
+
+#  mvc:
+#    contentnegotiation:
+#      favor-parameter: true
+#      media-types:
+#        mp4: video/mp4
+#        mp3: audio/mpeg
+#        wav: audio/wav
+#        m4a: audio/mp4
+#        aac: audio/aac
+#        ogg: audio/ogg
+#        flac: audio/flac
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
