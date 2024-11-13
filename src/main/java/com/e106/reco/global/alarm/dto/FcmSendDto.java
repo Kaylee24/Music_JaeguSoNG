@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f04f442412a70253234372892d1abdb4af7587b6d3abeb4146316ee21f2ff53
-size 427
+package com.e106.reco.global.alarm.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+
+/**
+ * 모바일에서 전달받은 객체
+ *
+ */
+@Getter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class FcmSendDto {
+    private String token;
+
+    private String title;
+
+    private String body;
+
+}

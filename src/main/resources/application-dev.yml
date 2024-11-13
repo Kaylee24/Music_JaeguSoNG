@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:363b1ffc3555f0d0506efbc614e9fb534adfcae15906134c49153fd1d37920c0
-size 355
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://localhost/~/reco
+
+  data:
+    mongodb:
+      uri: mongodb+srv://ADMIN:SSAFY123@reco.mv9rf.mongodb.net/RECO?ssl=true
+    redis:
+      host: localhost
+      port: 6379
+      password:
