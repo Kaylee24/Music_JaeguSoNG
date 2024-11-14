@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b07b1b8c43dc255f42a6946ab0ecd2c9f2469c28a4c77d7bbe3fecf4d6af6ff4
-size 516
+package com.e106.reco;
+
+import jakarta.annotation.PostConstruct;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.TimeZone;
+
+@SpringBootApplication
+public class RecoApplication {
+    @PostConstruct
+    public void init() {
+        TimeZone.setDefault(TimeZone.getTimeZone("Asia/Seoul"));
+    }
+    public static void main(String[] args) {
+        SpringApplication.run(RecoApplication.class, args);
+    }
+
+}
