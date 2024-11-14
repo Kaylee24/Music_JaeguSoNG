@@ -1,18 +1,3 @@
-package com.e106.reco.domain.workspace.dto;
-
-import com.e106.reco.domain.workspace.entity.converter.WorkspaceState;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import java.util.List;
-
-@Getter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class WorkspaceResponse {
-    private int totalPage;
-    private List<WorkspaceDto> workspaceDto;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9c2a598f58f49599e7ee944b59a7dceb4e2f153747a591c2c930b915a7edbdc
+size 434

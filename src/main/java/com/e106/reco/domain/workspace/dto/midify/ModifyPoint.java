@@ -1,18 +1,3 @@
-package com.e106.reco.domain.workspace.dto.midify;
-
-import com.e106.reco.domain.workspace.entity.converter.SoundType;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class ModifyPoint {
-    private Long soundSeq;
-    private Double startPoint;
-    private Double endPoint;
-    private SoundType type;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f438bbb9b2e71238cdccddea3f1b27dc93b146968d36bded4bccf04200067c26
+size 449

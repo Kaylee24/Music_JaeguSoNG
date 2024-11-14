@@ -1,14 +1,3 @@
-package com.e106.reco.domain.workspace.dto.divide;
-
-import lombok.Builder;
-import lombok.Data;
-
-@Data
-@Builder
-public class AccountLimitsResponse {
-    private String option;
-    private String email;
-    private Double totalDurationLimit;
-    private Double usedDuration;
-    private Double remainingDuration;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf99be142059db70006de81060953d39690677ec27d0ac045470c16b239713d2
+size 327
