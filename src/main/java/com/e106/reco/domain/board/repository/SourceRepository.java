@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb548b8e781db92293ac2896190b6894401d5f674ee0f1cc7895da4258626b1a
-size 361
+package com.e106.reco.domain.board.repository;
+
+import com.e106.reco.domain.board.entity.Source;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface SourceRepository extends JpaRepository<Source, Long> {
+    List<Source> findByBoard_seq(Long boardSeq);
+    void deleteByBoard_seq(Long boardSeq);
+}

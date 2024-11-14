@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a740579a4707ea5e9ba56935f31d6231a69209b736c2b718042f8a47d57a3f14
-size 376
+package com.e106.reco.domain.artist.user.dto.node;
+
+import java.util.List;
+
+// 추천 결과를 받기 위한 Projection 인터페이스
+public interface ArtistRecommendationProjection {
+    String getArtistName();
+    double getSimilarityScore();
+    List<String> getSharedGenres();
+    List<String> getSharedInstruments();
+    List<String> getSharedRegions();
+}

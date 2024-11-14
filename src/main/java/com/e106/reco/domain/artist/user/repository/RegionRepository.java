@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e54457ebd090889ca9b688c49c061cde6a7e3eae1f249cafec4a200a3b7cc99
-size 410
+package com.e106.reco.domain.artist.user.repository;
+
+import com.e106.reco.domain.artist.user.node.RegionNode;
+import org.springframework.data.neo4j.repository.Neo4jRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface RegionRepository extends Neo4jRepository<RegionNode, Long> {
+    Optional<RegionNode> findByName(String name);
+}
