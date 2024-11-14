@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eca0af55209274d0748221ed5e9c4dbefbd3bb0a105fd793d17079b98ff9cb36
-size 426
+package com.e106.reco.domain.artist.user.repository;
+
+import com.e106.reco.domain.artist.user.node.InstrumentNode;
+import org.springframework.data.neo4j.repository.Neo4jRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface InstrumentRepository extends Neo4jRepository<InstrumentNode, Long> {
+    Optional<InstrumentNode> findByName(String name);
+}

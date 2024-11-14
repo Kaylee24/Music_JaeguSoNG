@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f544fda7611f6a9cc57e36758aaf3a4ff95544771697ed8a723f263c0c066f6
-size 515
+package com.e106.reco.domain.artist.user.node;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.springframework.data.neo4j.core.schema.GeneratedValue;
+import org.springframework.data.neo4j.core.schema.Id;
+import org.springframework.data.neo4j.core.schema.Node;
+
+@Node("Genre")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+public class GenreNode {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String name;
+}
