@@ -1,16 +1,3 @@
-package com.e106.reco.domain.workspace.dto.divide;
-
-import lombok.Data;
-
-@Data
-public class FileResult {
-    private String status;
-    private String name;
-    private Long size;
-    private Double duration;
-    private String splitter;
-    private String stem;
-    private SplitResult split;
-    private TaskResult task;
-    private String error;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b329f899c1396460d767d5a5d5f9d5afd6b9dddf54a0e939168446fc88d67ff7
+size 365

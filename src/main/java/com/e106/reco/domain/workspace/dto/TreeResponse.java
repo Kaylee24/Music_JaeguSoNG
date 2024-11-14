@@ -1,16 +1,3 @@
-package com.e106.reco.domain.workspace.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Builder
-public class TreeResponse {
-    private Long workspaceSeq;
-    private String workspaceName;
-    private String artistName;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a32ac6e07147849d68061568619c43cd38b9af147c379811c083618d6da98fa
+size 356

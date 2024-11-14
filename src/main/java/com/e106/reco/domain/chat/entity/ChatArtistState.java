@@ -1,17 +1,3 @@
-package com.e106.reco.domain.chat.entity;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
-
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class ChatArtistState {
-    private LocalDateTime joinTime;
-    private LocalDateTime lastOnlineTime;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:75f5958672eb9932e8996c022b0140f931ea9a3faa2be56fb039f10e302163a1
+size 369

@@ -1,12 +1,3 @@
-package com.e106.reco.domain.board.entity;
-
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-
-@Getter
-@RequiredArgsConstructor
-public enum CommentState {
-    ACTIVE("활성"),
-    INACTIVE("비활성");
-    private final String name;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:776c6348abd8fa45487d31c8f9aa6333814af1604f19e72559075c54b1e50a45
+size 258

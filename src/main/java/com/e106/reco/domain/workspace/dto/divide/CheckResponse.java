@@ -1,12 +1,3 @@
-package com.e106.reco.domain.workspace.dto.divide;
-
-import lombok.Data;
-
-import java.util.Map;
-
-@Data
-public class CheckResponse {
-    private String status;
-    private Map<String, FileResult> result;
-    private String error;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:94fa3419f66dbbceac445a6ff51692fc08cd2e39a539bc68764df3b1ad6e69f5
+size 242
