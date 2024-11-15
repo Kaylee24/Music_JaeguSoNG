@@ -1,19 +1,3 @@
-package com.e106.reco.domain.chat.dto;
-
-import com.e106.reco.domain.artist.entity.Artist;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-
-@Getter
-@RequiredArgsConstructor
-@AllArgsConstructor
-@Builder
-public class ChatRoomResponse {
-    String nickname;
-
-    public static ChatRoomResponse of(Artist artist){
-        return ChatRoomResponse.builder().nickname(artist.getNickname()).build();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc1a7c9913a1eaa7ebb6f64278f2f0590dddb0c28d283dabcaa6286720cc2892
+size 599
