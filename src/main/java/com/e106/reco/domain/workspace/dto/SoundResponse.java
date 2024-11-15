@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df92be5390288639c7cfb92f85dffbb645a54efa97b9065872e6837dd66538f7
-size 469
+package com.e106.reco.domain.workspace.dto;
+
+import com.e106.reco.domain.workspace.entity.converter.SoundType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class SoundResponse {
+    private Long soundSeq;
+    private Double startPoint;
+    private Double endPoint;
+    private String url;
+    private SoundType type;
+}

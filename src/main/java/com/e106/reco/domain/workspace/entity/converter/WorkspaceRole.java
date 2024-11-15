@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82c991fa25d218bdfea0d950c4a637c0120cc81d6bc46cc691cd7a3255461729
-size 284
+package com.e106.reco.domain.workspace.entity.converter;
+
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@Getter
+@RequiredArgsConstructor
+public enum WorkspaceRole {
+    VIEWER("읽기 허용"),
+    MASTER("전체 허용");
+    private final String name;
+}

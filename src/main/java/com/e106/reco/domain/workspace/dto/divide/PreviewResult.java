@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a89785beeb3fad2cfcddf6f3d02358e3e8784249efc7ba43bd976e9bbb5a5f4
-size 504
+package com.e106.reco.domain.workspace.dto.divide;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+@Data
+public class PreviewResult {
+    private Double duration;
+    private String stem;
+
+    @JsonProperty("stem_track")
+    private String stemTrack;
+
+    @JsonProperty("stem_track_size")
+    private Long stemTrackSize;
+
+    @JsonProperty("back_track")
+    private String backTrack;
+
+    @JsonProperty("back_track_size")
+    private Long backTrackSize;
+}
