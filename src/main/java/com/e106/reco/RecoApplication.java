@@ -1,16 +1,3 @@
-package com.e106.reco;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-
-@EnableMongoRepositories
-@SpringBootApplication
-public class RecoApplication {
-
-    public static void main(String[] args) {
-
-        SpringApplication.run(RecoApplication.class, args);
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb64a049b07cd652bcf46d2dbc2cb3c355c304903667ae99ac7a4e1b09853180
+size 632
