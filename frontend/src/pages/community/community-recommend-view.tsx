@@ -1,11 +1,3 @@
-import React from 'react';
-
-const CommunityRecommendView: React.FC = () => {
-  return (
-    <div>
-      커뮤니티 메인 페이지 추천 올거임
-    </div>
-  );
-};
-
-export default CommunityRecommendView;
+version https://git-lfs.github.com/spec/v1
+oid sha256:72a10ceef776afdb2a170a84618d60a201cc413955db6c6ba4d8e831e59370e2
+size 6748
