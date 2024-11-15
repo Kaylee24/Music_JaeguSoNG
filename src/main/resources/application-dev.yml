@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f41b4c9c2ff9eba581590ee8d9cdeb8d904f0d5ca18eb66d837c0362c05b1dd2
-size 532
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://localhost/~/reco
+
+  data:
+    mongodb:
+      uri: mongodb+srv://ADMIN:SSAFY123@reco.mv9rf.mongodb.net/RECO?ssl=true
+    redis:
+      host: localhost
+      port: 6379
+      password:
+
+  neo4j:
+    uri: neo4j+s://8295f96d.databases.neo4j.io
+    authentication:
+      username: neo4j
+      password: O2TxuKNhWqOcpfD1mBwtuqDgOjL6lcyN3osgzuUSiTo
