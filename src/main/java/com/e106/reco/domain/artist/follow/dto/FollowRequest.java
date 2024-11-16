@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:182f17730d429fe0ac68071b7f6eb75c64ce314d2acc2cd9cf3e2aa087af264e
-size 393
+package com.e106.reco.domain.artist.follow.dto;
+
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class FollowRequest {
+    @NotNull
+    private Long targetSeq;
+}

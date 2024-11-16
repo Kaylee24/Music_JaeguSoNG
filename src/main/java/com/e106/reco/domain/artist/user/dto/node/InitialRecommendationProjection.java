@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e2f74a1b9365ac319cef26665a202feb01059f3edcec23bec7509e1cdc84394
-size 302
+package com.e106.reco.domain.artist.user.dto.node;
+
+import java.util.List;
+
+public interface InitialRecommendationProjection {
+    String getName();
+    double getSimilarityScore();
+    List<String> getSharedGenres();
+    List<String> getSharedInstruments();
+    String getArtistRegion();
+}

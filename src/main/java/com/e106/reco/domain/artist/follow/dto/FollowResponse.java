@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ea24e65a4d65ca1aa65abc5a106ac7044583036d66de3727b26decffe95c75d
-size 353
+package com.e106.reco.domain.artist.follow.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class FollowResponse {
+    private Long artistSeq;
+    private String thumbnail;
+    private String nickname;
+}
