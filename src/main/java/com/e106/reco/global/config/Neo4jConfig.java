@@ -1,15 +1,3 @@
-package com.e106.reco.global.config;
-
-import org.neo4j.driver.Driver;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.neo4j.core.transaction.Neo4jTransactionManager;
-
-@Configuration
-public class Neo4jConfig {
-
-    @Bean(name = "neo4jTransactionManager")
-    public Neo4jTransactionManager neo4jTransactionManager(Driver driver) {
-        return new Neo4jTransactionManager(driver);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a6bd8af6b92fad5c26f0fe1dd5231f101b232a47a1eff16f99aba7c7d176683
+size 1141
