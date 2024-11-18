@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1b5127a6bdfa80c459a9de80b81116dabbffe39b2095ae8b3cefc81de65281d
-size 460
+package com.e106.reco.domain.artist.user.dto.node;
+
+import lombok.Builder;
+import lombok.Data;
+
+import java.util.Map;
+
+@Data
+@Builder
+public class InitialRecommendationDTO {
+    private String name;
+    private String nickname;
+    private Long artistSeq;
+    private String genre;
+    private String position;
+    private String profileImage;
+    private String region;
+    private double similarityScore;  // 0.0 ~ 1.0 정규화된 점수
+}
