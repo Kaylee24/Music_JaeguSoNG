@@ -1,23 +1,3 @@
-import React from 'react';
-import { Button } from '@chakra-ui/react';
-
-interface CommunityButtonProps {
-    title: string;
-    onClick?: () => void;
-}
-
-const CommunityButton2: React.FC<CommunityButtonProps> = ({title, onClick}) => {
-  return (
-    <Button
-    backgroundColor="transparent" 
-    _hover={{ transform: "translateY(-2px)", bg: "transparent" }}
-      height="30px"
-      width="auto"
-        onClick={onClick} 
-    >
-        {title}
-    </Button>
-  );
-};
-
-export default CommunityButton2;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0a6cc366f6c7673f667aed567c05292c9aa40ec970b95a1a917ad27190f7881
+size 518
