@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cd2c1bbafabdc0934931bd6c6981d004a49a07ab747c914833bc838c487587a
-size 408
+package com.e106.reco.domain.workspace.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Builder
+public class TreeResponse {
+    private String originTitle;
+    private String originSinger;
+    private List<TreeInfoResponse> treeInfoResponseList;
+}
