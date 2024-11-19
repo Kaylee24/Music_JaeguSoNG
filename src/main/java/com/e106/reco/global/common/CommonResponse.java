@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9562ee3c92414ed3938b98c4cae709105a733267d4be2a62bfe025ef2067bd9a
-size 280
+package com.e106.reco.global.common;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class CommonResponse {
+    private String result;
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9c8481d9c1581616e9c300eecad5470208feccd7e949f4654e036ed3123a84d
-size 265
+package com.e106.reco.domain.workspace.repository;
+
+
+import com.e106.reco.domain.workspace.entity.FamilyTree;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface FamilyTreeRepository extends JpaRepository<FamilyTree, Long> {
+
+}
