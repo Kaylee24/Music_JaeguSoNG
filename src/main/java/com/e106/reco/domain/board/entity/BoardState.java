@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ef1124470c48ce7ef5ab897ba231c81a216131e233ba6b6e982d7fb9ac40fe2
-size 786
+package com.e106.reco.domain.board.entity;
+
+import com.e106.reco.global.error.exception.BusinessException;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+import java.util.stream.Stream;
+
+import static com.e106.reco.global.error.errorcode.BoardErrorCode.BOARD;
+
+@Getter
+@RequiredArgsConstructor
+public enum BoardState {
+    PUBLIC("공개"),
+    PRIVATE("비공개"),
+    INACTIVE("비활성");
+    private final String name;
+
+    @JsonCreator
+    public static BoardState of(String inputValue) {
+        return Stream.of(BoardState.values())
+                .filter(BoardState -> BoardState.name.equals(inputValue))
+                .findFirst()
+                .orElseThrow(() -> new BusinessException(BOARD));
+    }
+}

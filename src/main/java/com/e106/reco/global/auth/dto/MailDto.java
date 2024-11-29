@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e27ec2605240041eca66ae7bf27ac04981a058e1b95f0fec8a592ce1cb68239b
-size 649
+package com.e106.reco.global.auth.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import static com.e106.reco.global.util.RegExpUtils.EMAIL_EXP;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+public class MailDto {
+    @NotBlank(message = "이메일은 공백이 될 수 없습니다.")
+    @Email(message = "올바른 이메일 형식을 입력해주세요.", regexp = EMAIL_EXP)
+    private String email;
+    private String code;
+
+    public void modifyCode(String code){
+        this.code = code;
+    }
+}

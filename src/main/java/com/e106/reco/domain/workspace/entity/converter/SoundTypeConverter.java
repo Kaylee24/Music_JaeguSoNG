@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12f803b8b013a034aaa9d18432d547dfd30ce81324163416273fd12bfc661a32
-size 569
+package com.e106.reco.domain.workspace.entity.converter;
+
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SoundTypeConverter implements Converter<String, SoundType> {
+
+    @Override
+    public SoundType convert(String source) {
+        for (SoundType soundType : SoundType.values()) {
+            if (soundType.getName().equals(source)) {
+                return soundType;
+            }
+        }
+        throw new IllegalArgumentException("Invalid sound type: " + source);
+    }
+}

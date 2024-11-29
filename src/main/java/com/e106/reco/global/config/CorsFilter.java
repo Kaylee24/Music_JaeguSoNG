@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4fd87b664a4f8b5c5aedcca4ca599b27e00dd40d618b56190049f3451b07757
-size 1370
+package com.e106.reco.global.config;
+
+import jakarta.servlet.*;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+
+public class CorsFilter implements Filter {
+
+    private static final String ALLOWED_ORIGIN_1 = "http://localhost:5173";
+    private static final String ALLOWED_ORIGIN_2 = "https://k11e106.p.ssafy.io";
+
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+
+        String origin = request.getHeader("Origin");
+
+        if (ALLOWED_ORIGIN_1.equals(origin) || ALLOWED_ORIGIN_2.equals(origin)) {
+            response.setHeader("Access-Control-Allow-Origin", origin);
+        } else {
+            response.setHeader("Access-Control-Allow-Origin", ""); // Empty to block other origins
+        }
+
+        response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS");
+        response.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type");
+        response.setHeader("Access-Control-Allow-Credentials", "true");
+
+        filterChain.doFilter(request, response);
+    }
+}

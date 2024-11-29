@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:585575b3584d01801289231dd5d5ae2ac7d112c812c1b891dd28129dd4160825
-size 1047
+package com.e106.reco.domain.board.dto;
+
+import com.e106.reco.domain.artist.entity.Artist;
+import com.e106.reco.domain.board.entity.Board;
+import com.e106.reco.domain.board.entity.Comment;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@ToString
+public class CommentRequestDto {
+    @NotNull
+    private Long artistSeq;
+    @NotNull
+    private Long boardSeq;
+    private Long parentCommentSeq;
+    @NotNull
+    private String content;
+
+    public static Comment toEntity(CommentRequestDto comment) {
+        return Comment.builder()
+                .board(Board.builder().seq(comment.getBoardSeq()).build())
+                .parent(Comment.builder().seq(comment.getParentCommentSeq()).build())
+                .artist(Artist.builder().seq(comment.getArtistSeq()).build())
+                .content(comment.getContent())
+                .build();
+    }
+}

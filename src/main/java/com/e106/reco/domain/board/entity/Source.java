@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00180419e99dc1ba73aeb55bedfdf722306b3efc8a8bcc1a79941ff24425e2ad
-size 835
+package com.e106.reco.domain.board.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Getter
+@Table(name = "Sources")
+public class Source {
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "source_seq")
+    private Long seq;
+
+    @Column(nullable = false)
+    private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "board_seq", nullable = false)
+    private Board board;
+}

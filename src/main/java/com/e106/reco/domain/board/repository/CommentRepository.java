@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1eff2daee7f289f3b5b5e163bd5d0b0896f95d81b9a5400c15e8fa535e92d29
-size 594
+package com.e106.reco.domain.board.repository;
+
+import com.e106.reco.domain.board.entity.Comment;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface CommentRepository extends JpaRepository<Comment, Long> {
+    @Query("select c from Comment c where c.state != com.e106.reco.domain.board.entity.CommentState.INACTIVE")
+    Optional<Comment> findBySeq(Long seq);
+
+    List<Comment> findByBoard_Seq(Long seq);
+    List<Comment> findByParent_seq(Long parentSeq);
+}

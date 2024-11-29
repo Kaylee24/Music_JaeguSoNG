@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1592e8d9b6022afea67eda03c1bf2ecb31a79f2fdbeb5dea8001b4bec27b23f
-size 618
+package com.e106.reco.domain.workspace.entity.converter;
+
+import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
+
+@Component
+public class WorkspaceStateConverter implements Converter<String, WorkspaceState> {
+
+    @Override
+    public WorkspaceState convert(String state) {
+        for (WorkspaceState workspaceState : WorkspaceState.values()) {
+            if (workspaceState.name().equalsIgnoreCase(state)) {
+                return workspaceState;
+            }
+        }
+        throw new IllegalArgumentException("Unknown workspace state: " + state);
+    }
+}
